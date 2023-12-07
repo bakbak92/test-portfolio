@@ -1,0 +1,36 @@
+.description-box {
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  background: #c4e9dc;
+
+  .title-description {
+    font-family: $font-italia;
+    font-size: 40px;
+    text-align: center;
+  }
+  .text-description {
+    font-family: $font-mont;
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description-box .title-description {
+    font-size: 55px;
+  }
+  .description-box .text-description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .description-box .title-description {
+    font-size: 70px;
+  }
+  .description-box .text-description {
+    font-size: 18px;
+  }
+}

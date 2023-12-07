@@ -1,0 +1,85 @@
+.main-contact {
+  display: flex;
+  flex-direction: column;
+  background: #f3eece;
+
+  .title-page-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+    .title-contact {
+      font-family: $font-italia;
+      font-size: 40px;
+    }
+    .citation {
+      font-family: $font-blackops;
+      font-weight: 300;
+      font-size: 17px;
+      text-align: center;
+    }
+  }
+  .box-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+
+    .contact-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+
+      .link-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+      }
+
+      .logo-contact {
+        width: 35px;
+        height: 35px;
+      }
+      .text-contact {
+        font-family: $font-mont;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-contact .title-page-contact .title-contact {
+    font-size: 55px;
+  }
+  .main-contact .title-page-contact .citation {
+    font-size: 21px;
+  }
+  .main-contact .box-contact .contact-box .logo-contact {
+    width: 42px;
+    height: 42px;
+  }
+  .main-contact .box-contact .contact-box {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-contact .title-page-contact .title-contact {
+    font-size: 70px;
+  }
+  .main-contact .title-page-contact .citation {
+    font-size: 25px;
+  }
+  .main-contact .box-contact .contact-box .logo-contact {
+    width: 48px;
+    height: 48px;
+  }
+  .main-contact .box-contact .contact-box {
+    margin: 30px 0;
+  }
+}

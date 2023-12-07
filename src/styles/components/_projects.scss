@@ -1,0 +1,91 @@
+.main-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #c4e9dc;
+
+  .title-page-project {
+    margin: 30px 0;
+
+    .title {
+      font-family: $font-italia;
+      font-size: 40px;
+    }
+  }
+
+  .card-project {
+    display: flex;
+    width: 270px;
+    margin-bottom: 30px;
+    border: 5px double blue;
+    background: #dfdfdf;
+    border-radius: 15px;
+    font-family: $font-mont;
+
+    .link-card-project {
+      text-decoration: none;
+      color: #000;
+
+      .img-card {
+        width: 270px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .card-text {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+
+        .text-title-project {
+          text-align: center;
+          font-weight: bold;
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+        .text-explain-project {
+          text-align: center;
+          font-weight: bold;
+          font-size: 17px;
+          margin-bottom: 5px;
+        }
+        .text-description {
+          margin-bottom: 5px;
+        }
+        .text-objectif {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-project .title-page-project .title{
+    font-size: 55px;
+  }
+  .main-project .card-project {
+    display: flex;
+    width: 500px;
+  }
+  .main-project .card-project .link-card-project {
+    display: flex;
+  }
+  .main-project .card-project .link-card-project .img-card {
+    border-radius: 10px 0 0 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-project .title-page-project .title{
+    font-size: 70px;
+  }
+  .main-project .card-project {
+    display: flex;
+    width: 805px;
+  }
+  .main-project .card-project .link-card-project .card-text{
+    width: 570px;
+  }
+  .main-project .card-project .link-card-project .card-text .text-title-project, .main-project .card-project .link-card-project .card-text .text-explain-project, .main-project .card-project .link-card-project .card-text .text-description, .main-project .card-project .link-card-project .card-text .text-objectif {
+    margin-bottom: 30px;
+  }
+}

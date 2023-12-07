@@ -1,0 +1,90 @@
+.navigation{
+  display: flex;
+  justify-content: center;
+  background: #000;
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    list-style: none;
+    
+    a {
+      display: flex;
+      justify-content: center;
+      margin: 5px 0;
+      padding: 10px;
+      
+      cursor: pointer;
+      text-decoration: none;
+
+      li {
+        font-size: 15px;
+        font-family: $font-mont;
+        color: aqua;
+        text-shadow: 1px 1px 3px blue;
+        transition: 0.2s;
+
+        &:hover{
+          color: #d7ffcf;
+          text-shadow: 2px 2px 2px green;
+          transition: 0.5s;
+        }
+      }
+    } 
+    
+    .navLink-active {
+      position: relative;
+    
+      &::after{
+        content: "";
+        height: 4px;
+        width: 0;
+        background: aqua;
+        box-shadow: 2px 2px 7px blue;
+        position: absolute;
+        border-radius: 10px;
+        bottom:0px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-animation: anim 0.3s ease forwards;
+        animation: anim 0.8s ease forwards;
+    
+        @-webkit-keyframes anim {
+          to {
+            width: 100%;
+          }
+        }
+        @keyframes anim {
+          to {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .navigation ul a li {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation ul a li {
+    font-size: 20px;
+  }
+}
+
+

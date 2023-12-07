@@ -1,0 +1,61 @@
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+  border-radius: 30px 30px 0 0;
+  background: url(../../assets/image/d6039e4fbb86ca381b633789713fa960.avif) center/cover;
+  background-size: 101%;
+
+  .name {
+    display: flex;
+    justify-content: space-around;
+    width: 335px;
+    font-family: $font-italia;
+    .set-name {
+      font-size: 65px;
+      font-weight: bold;
+      color: aqua;
+      text-shadow: 0 0 1px blue, 0 0 5px blue, 0 0 15px blue, 0 0 20px, 0 0 25px blue, 0 0 40px #fff;
+    }
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-blackops;
+
+    .set-title {
+      font-size: 20px;
+      font-weight: 400;
+      color: #bfff7b;
+      text-shadow: 0 0 1px green, 0 0 5px green, 0 0 15px green, 0 0 20px, 0 0 25px green, 0 0 40px #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .name {
+    width: 580px;
+
+  }
+  header .name .set-name {
+    font-size: 120px;
+  }
+  header .title .set-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header .name {
+    width: 670px;
+
+  }
+  header .name .set-name {
+    font-size: 150px;
+  }
+  header .title .set-title {
+    font-size: 40px;
+  }
+}
